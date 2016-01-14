@@ -10,10 +10,6 @@ import org.learn.sys.institutes.model.Institute;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- *
- * @author Vinay
- */
 @Service
 public class InstituesService {
     
