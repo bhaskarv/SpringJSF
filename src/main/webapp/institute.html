@@ -90,17 +90,22 @@
     </head>
     <body ng-controller="instsController">
         <div class="form-style-2">
-
+            
             <form name="form" ng-submit="add()">
+                <fieldset>
+                    <div class="form-style-2-heading">
+                <legend>Add new institute </legend>
+            </div>
                 <div align="center">
-                    <label for="instName">Name : </label>
-                    <input type="text" id="instName" ng-model="inst.iname" placeHolder="Enter name" />
+                     <label for="instName"> <span> Institute Name <span class="required">*</span></span></label>
+                    <input type="text" id="instName" class="input-field" ng-model="inst.iname" placeHolder="Enter name" />
                     <br/>
-                    <label for="instType">Type : </label>
-                    <input type="text" id="instType" ng-model="inst.itype" placeHolder="Enter Type" />
+                    <label for="instType"> <span> Institute Id <span class="required">*</span></span></label>
+                    <input type="text" id="instType" class="input-field" ng-model="inst.itype" placeHolder="Enter Type" />
                     <br/>
                     <button>Add</button>
-                </div>
+                </div
+                </fieldset>
             </form>
         </div>
         <p>Status : {{message}}
