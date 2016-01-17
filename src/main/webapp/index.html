@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="insts-app">
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Institutes - AngularJS</title>
+        <script src="js/angular.js"></script>
+        <script src="js/institutes.js"></script>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body ng-controller="instsController">
+        <h2>List of Institutes</h2>
+        <ul>
+            <li ng-repeat="inst in instsList">
+                <span>{{inst.name}}<span> <span>{{inst.type}}</span>
+            </li>
+        </ul>
     </body>
 </html>
